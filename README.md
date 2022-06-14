@@ -107,7 +107,7 @@ So we start from our credibility matrix and obtain the following relations:
   We recover and rank in decreasing order the alternatives selected at each step -alternative **where the q is maximal**.
   Once this is done, the alternative is removed from the table and the procedure is **repeated until there are no alternatives left**.
   We obtain the final ranking: 
-    - CC (climate change)
+
     - Rank 1 = VT Gasoline NEDC
     - Rank 2 = VE DE
     - Rank 3 = VT Diesel NEDC
@@ -121,6 +121,7 @@ So we start from our credibility matrix and obtain the following relations:
   We therefore rank in **ascending order**.
   
   We obtain the following ranking:
+  
     - Rank 1 = EU 27 EV and VT Diesel NEDC
     - Rank 2 = VE DE
     - Rank 3 = VE FR and VT Gasoline NEDC
