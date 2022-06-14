@@ -3,6 +3,7 @@
 ## **1. About this project**
 
 Everything is explained in the pdf file named "**ProjectReport**". However, as it is written in French, this README file will explain the main points in English.
+
 The objective of this project is to answer the problem of a company, here **SCNF (1)**. We come to compare different alternatives on different criteria to finally decide which solution is the best for us. In other words, we try to **choose which vehicle is to be favored according to the conditions** imposed by the subject.
 
 We are faced with a strategic problem, hence the need for this **MCDA method**. Here we try to help our decision-maker: SNCF which is an industrialist.
