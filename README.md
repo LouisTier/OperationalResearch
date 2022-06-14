@@ -8,11 +8,13 @@ The objective of this project is to answer the problem of a company, here **SCNF
 
 We are faced with a strategic problem, hence the need for this **MCDA method**. Here we try to help our decision-maker: SNCF which is an industrialist.
 In this subject, we have **5 alternatives** at our disposal: 
-  - VE DE
-  - VE EU 27
-  - VE FR
-  - VT Gasoline NEDC 
-  - VT Diesel NEDC
+
+    - VE DE
+    - VE EU 27
+    - VE FR
+    - VT Gasoline NEDC 
+    - VT Diesel NEDC
+
 We have here several options, namely an *electric vehicle* or a *thermal vehicle*.
 
 Behind this study, we try to **establish a classification of the given vehicles** to give a final recommendation to the decision-maker according to several criteria of comparison criteria that he will have given us. 
@@ -20,13 +22,15 @@ Behind this study, we try to **establish a classification of the given vehicles*
 The goal is to **minimize the different environmental impacts of these vehicles** (energy balance, greenhouse gas emissions, etc.) and to choose the most appropriate one.
 
 To compare the alternatives, we rely on many **evaluation criteria**:
-  - CC (climate change)
-  - AC (acidification)
-  - Eutro (Eutrophication)
-  - CED (Total Primary Energy)
-  - Dec rad (radioactive waste)
-  - Em rad (Radioactive emissions to air)
-  - Nox (NOx emissions).
+
+    - CC (climate change)
+    - AC (acidification)
+    - Eutro (Eutrophication)
+    - CED (Total Primary Energy)
+    - Dec rad (radioactive waste)
+    - Em rad (Radioactive emissions to air)
+    - Nox (NOx emissions)
+  
 The experts who will evaluate these alternatives are **members of ADEME**, which is leading this study.
 
 For the MCDA we have to choose a method. 
@@ -52,10 +56,11 @@ The first step is to calculate the delta of each criterion between VE DE and all
 
 ![image](https://user-images.githubusercontent.com/105392989/173569241-7e814adb-e22e-47ee-b547-30cbec2cc0bd.png)
 
-In order to determine the partial match indices, we need to determine the **thresholds for each criterion and each alternative**, namely 
-  - Preference threshold
-  - Threshold of indifference
-  - Veto threshold
+In order to determine the partial match indices, we need to determine the **thresholds for each criterion and each alternative**, namely :
+
+    - Preference threshold
+    - Threshold of indifference
+    - Veto threshold
 
 ![image](https://user-images.githubusercontent.com/105392989/173569649-b5944a47-eca2-49fa-b4f5-b02779033873.png)
 
@@ -132,10 +137,11 @@ To do this, we will construct the preference (P), indifference (I) and incompara
 ![image](https://user-images.githubusercontent.com/105392989/173575597-eef13a1b-4333-4289-8cb7-3c4024d63691.png)
 
 The final classification obtained through this merger is therefore :
-  - **Rank 1 : VT Gasoline NEDC**
-  - **Rank 2 : VE DE and VE FR (incomparable)**
-  - **Rank 3 : VT DIESEL NDEC**
-  - **Rank 4 : VE EU 27**
+
+    - **Rank 1 : VT Gasoline NEDC**
+    - **Rank 2 : VE DE and VE FR (incomparable)**
+    - **Rank 3 : VT DIESEL NDEC**
+    - **Rank 4 : VE EU 27**
 
 
 ## **5. Interpretation and recommendations**
