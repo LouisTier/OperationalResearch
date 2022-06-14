@@ -15,7 +15,8 @@ In this subject, we have **5 alternatives** at our disposal:
   - VT Diesel NEDC
 We have here several options, namely an *electric vehicle* or a *thermal vehicle*.
 
-Behind this study, we try to **establish a classification of the given vehicles** to give a final recommendation to the decision-maker according to several criteria of comparison criteria that he will have given us. The goal is to **minimize the different environmental impacts of these vehicles** (energy balance, greenhouse gas emissions, etc.) and to choose the most appropriate one.
+Behind this study, we try to **establish a classification of the given vehicles** to give a final recommendation to the decision-maker according to several criteria of comparison criteria that he will have given us. 
+The goal is to **minimize the different environmental impacts of these vehicles** (energy balance, greenhouse gas emissions, etc.) and to choose the most appropriate one.
 
 To compare the alternatives, we rely on many **evaluation criteria**:
   - CC (climate change)
@@ -28,12 +29,14 @@ To compare the alternatives, we rely on many **evaluation criteria**:
 The experts who will evaluate these alternatives are **members of ADEME**, which is leading this study.
 
 For the MCDA we have to choose a method. 
-ELECTRE I identifies a set of solutions while ELECTRE III ranks a set of solutions from best to worst - although it requires more computation than ELECTRE I. In addition, ELECTRE III **takes into account the preferences associated with the judgment criteria**. It is through a weighting step that the different actors can give their opinions and express possible differences in judgment - Simos' method. We, therefore, **choose the ELECTRE III method**.
+ELECTRE I identifies a set of solutions while ELECTRE III ranks a set of solutions from best to worst - although it requires more computation than ELECTRE I. 
+In addition, ELECTRE III **takes into account the preferences associated with the judgment criteria**. It is through a weighting step that the different actors can give their opinions and express possible differences in judgment - Simos' method. We, therefore, **choose the ELECTRE III method**.
 
 ## **2. SIMOS method: calculation of indicator weights**
 
 We first evaluate the impact of the indicators using the SIMOS method.
-The decision-maker has previously sorted the criteria in the order of increasing importance that he prefers. He He can also add "**white cards**" between the criteria if he considers that **one criterion is much more important** than the important than the next one.
+The decision-maker has previously sorted the criteria in the order of increasing importance that he prefers. 
+He can also add "**white cards**" between the criteria if he considers that **one criterion is much more important** than the important than the next one.
 From this ranking, we calculate the non-normalized and then normalized weights of the criteria to finally obtain the following weight table: 
 
 ![image](https://user-images.githubusercontent.com/105392989/173569132-bbab417e-7596-4282-bfce-267244a757cc.png)
