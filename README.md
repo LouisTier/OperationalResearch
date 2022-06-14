@@ -138,10 +138,10 @@ To do this, we will construct the preference (P), indifference (I) and incompara
 
 The final classification obtained through this merger is therefore :
 
-    - **Rank 1 : VT Gasoline NEDC**
-    - **Rank 2 : VE DE and VE FR (incomparable)**
-    - **Rank 3 : VT DIESEL NDEC**
-    - **Rank 4 : VE EU 27**
+- **Rank 1 : VT Gasoline NEDC**
+- **Rank 2 : VE DE and VE FR (incomparable)**
+- **Rank 3 : VT DIESEL NDEC**
+- **Rank 4 : VE EU 27**
 
 
 ## **5. Interpretation and recommendations**
