@@ -16,6 +16,7 @@ In this subject, we have **5 alternatives** at our disposal:
 We have here several options, namely an *electric vehicle* or a *thermal vehicle*.
 
 Behind this study, we try to **establish a classification of the given vehicles** to give a final recommendation to the decision-maker according to several criteria of comparison criteria that he will have given us. 
+
 The goal is to **minimize the different environmental impacts of these vehicles** (energy balance, greenhouse gas emissions, etc.) and to choose the most appropriate one.
 
 To compare the alternatives, we rely on many **evaluation criteria**:
@@ -29,7 +30,8 @@ To compare the alternatives, we rely on many **evaluation criteria**:
 The experts who will evaluate these alternatives are **members of ADEME**, which is leading this study.
 
 For the MCDA we have to choose a method. 
-ELECTRE I identifies a set of solutions while ELECTRE III ranks a set of solutions from best to worst - although it requires more computation than ELECTRE I. 
+ELECTRE I identifies a set of solutions while ELECTRE III ranks a set of solutions from best to worst - although it requires more computation than ELECTRE I.
+
 In addition, ELECTRE III **takes into account the preferences associated with the judgment criteria**. It is through a weighting step that the different actors can give their opinions and express possible differences in judgment - Simos' method. We, therefore, **choose the ELECTRE III method**.
 
 ## **2. SIMOS method: calculation of indicator weights**
@@ -37,6 +39,7 @@ In addition, ELECTRE III **takes into account the preferences associated with th
 We first evaluate the impact of the indicators using the SIMOS method.
 The decision-maker has previously sorted the criteria in the order of increasing importance that he prefers. 
 He can also add "**white cards**" between the criteria if he considers that **one criterion is much more important** than the important than the next one.
+
 From this ranking, we calculate the non-normalized and then normalized weights of the criteria to finally obtain the following weight table: 
 
 ![image](https://user-images.githubusercontent.com/105392989/173569132-bbab417e-7596-4282-bfce-267244a757cc.png)
@@ -63,6 +66,7 @@ Following this, we can obtain the **partial concordances** in order **to deduce 
 Subsequently, we are interested in the global discordance. For that we also pass by the **partial discordance** and a **set called F** defined as follows: 
 
 ![image](https://user-images.githubusercontent.com/105392989/173570556-a41ba73c-201d-43f7-bec7-1401585f7811.png)
+
 *where 'a' represents our alternative era and 'b' a second alternative to which we compare it.
 d' represents the partial discordance and 'c' the global concordance.*
 
@@ -78,6 +82,7 @@ After repeating these steps for each of our alternatives, we obtain the followin
 ## **4. Final ranking**
 
 In order to obtain the final ranking, it is necessary to use **two distillation algorithms distillation** - one ascending and one descending. Indeed, with ELECTRE III, the relationship of relationship becomes blurred when we introduce the concept of **pseudo-criteria**: *a outranks b in the measure of ρS(a, b)*.
+
 To obtain the outranking relation S, a threshold λ, called *λ-cut* or *λ-threshold*, is introduced:
 
 ![image](https://user-images.githubusercontent.com/105392989/173573048-b7f02e2a-daff-4906-9e6b-c7ed97978cb7.png)
@@ -113,6 +118,7 @@ So we start from our credibility matrix and obtain the following relations:
   
   Here the principle is exactly the same as for the top-down algorithm. The only difference is that we recover the alternatives **where q is minimal**. 
   We therefore rank in **ascending order**.
+  
   We obtain the following ranking:
     - Rank 1 = EU 27 EV and VT Diesel NEDC
     - Rank 2 = VE DE
@@ -133,13 +139,16 @@ The final classification obtained through this merger is therefore :
 ## **5. Interpretation and recommendations**
 
 From the final ranking, we deduce that the **NEDC Gasoline thermal vehicle is the best alternative** among the 5 proposed according to the criteria and the weighting of the SNCF 1 decision-maker to minimize the environmental impact induced by the vehicles. 
-However, the fact that here the thermal vehicle is better than an electric vehicle **is by no means a generalization**. In fact, in second place, there are two electric vehicles, ahead of another combustion vehicle: VT Diesel NEDC. Moreover, the **weighting of the criteria plays a crucial role** in the ranking. 
-Today our decision-maker has proposed such importance among the criteria but maybe in 5 years, the weighting will vary according to the needs of the moment, the philosophy of the decision-maker, and according to many factors. And once this new weighting is done, and certainly according to new thresholds, the **result will be completely different**. 
-Moreover, here only one aspect has been taken into account: the environmental aspect. However, to push the study and the choice of the vehicle a little further, it could be interesting to look at two other aspects:
+However, the fact that here the thermal vehicle is better than an electric vehicle **is by no means a generalization**. In fact, in second place, there are two electric vehicles, ahead of another combustion vehicle: VT Diesel NEDC. 
 
+Moreover, the **weighting of the criteria plays a crucial role** in the ranking. 
+Today our decision-maker has proposed such importance among the criteria but maybe in 5 years, the weighting will vary according to the needs of the moment, the philosophy of the decision-maker, and according to many factors. And once this new weighting is done, and certainly according to new thresholds, the **result will be completely different**. 
+
+Moreover, here only one aspect has been taken into account: the environmental aspect. However, to push the study and the choice of the vehicle a little further, it could be interesting to look at two other aspects:
   - **Economy: does the decision-maker want to favor profits?**
   - **Society: does the decision-maker want to please the population?**
 
 Once the rankings have been obtained in these three respective aspects, we can again propose a weighting system according to the strategy of the decision-maker and thus propose THE vehicle to best satisfy these three aspects.
 It is therefore essential for the decision-maker to **always check and update his strategy and his criteria to determine the best alternative**.
+
 This example clearly shows the interest and power of operational research. Indeed, with such a multitude of criteria, it is **difficult to choose first sight**.
