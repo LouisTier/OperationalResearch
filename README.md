@@ -46,15 +46,18 @@ He can also add "**white cards**" between the criteria if he considers that **on
 
 From this ranking, we calculate the non-normalized and then normalized weights of the criteria to finally obtain the following weight table: 
 
-![image](https://user-images.githubusercontent.com/105392989/173569132-bbab417e-7596-4282-bfce-267244a757cc.png)
-
+<div id="weights" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/173569132-bbab417e-7596-4282-bfce-267244a757cc.png" width="450">
+</div>
 
 ## **3. Credibility matrix**
 
 To obtain the **"overall" credibility matrix**, this method and these calculations must be repeated for each of the alternatives - a total of 5 times.
 The first step is to calculate the delta of each criterion between VE DE and all other alternatives.
 
-![image](https://user-images.githubusercontent.com/105392989/173569241-7e814adb-e22e-47ee-b547-30cbec2cc0bd.png)
+<div id="credibility matrix" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/173569241-7e814adb-e22e-47ee-b547-30cbec2cc0bd.png" width="650">
+</div>
 
 In order to determine the partial match indices, we need to determine the **thresholds for each criterion and each alternative**, namely :
 
@@ -62,27 +65,36 @@ In order to determine the partial match indices, we need to determine the **thre
     - Threshold of indifference
     - Veto threshold
 
-![image](https://user-images.githubusercontent.com/105392989/173569649-b5944a47-eca2-49fa-b4f5-b02779033873.png)
+<div id="thresholds" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/173569649-b5944a47-eca2-49fa-b4f5-b02779033873.png" width="700">
+</div>
 
 Following this, we can obtain the **partial concordances** in order **to deduce the global concordance** of a given alternative. Here is an example of the global concordance obtained for the alternative VE DE :
 
-![image](https://user-images.githubusercontent.com/105392989/173570231-321150ad-d9f2-4d5e-98a8-de08619864a4.png)
+<div id="global concordance" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/173570231-321150ad-d9f2-4d5e-98a8-de08619864a4.png" width="700">
+</div>
 
 Subsequently, we are interested in the global discordance. For that we also pass by the **partial discordance** and a **set called F** defined as follows: 
 
-![image](https://user-images.githubusercontent.com/105392989/173570556-a41ba73c-201d-43f7-bec7-1401585f7811.png)
+<div id="set F" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/173570556-a41ba73c-201d-43f7-bec7-1401585f7811.png" width="550">
+</div>
 
 *where 'a' represents our alternative era and 'b' a second alternative to which we compare it.
 d' represents the partial discordance and 'c' the global concordance.*
 
 After having obtained this **global discordance**, we can finally obtain the last parameter which will be useful for the final classification, namely the **credibility index** defined as follows: 
 
-![image](https://user-images.githubusercontent.com/105392989/173571553-6a432a1b-f268-448b-8c4f-8a2de5907eb8.png)
+<div id="credibility index" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/173571553-6a432a1b-f268-448b-8c4f-8a2de5907eb8.png" width="550">
+</div>
 
 After repeating these steps for each of our alternatives, we obtain the following **credibility matrix**: 
 
-![image](https://user-images.githubusercontent.com/105392989/173571803-30e820df-5dcf-4680-8e9d-7f477d95834d.png)
-
+<div id="final matrix" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/173571803-30e820df-5dcf-4680-8e9d-7f477d95834d.png" width="900">
+</div>
 
 ## **4. Final ranking**
 
@@ -90,24 +102,34 @@ In order to obtain the final ranking, it is necessary to use **two distillation 
 
 To obtain the outranking relation S, a threshold λ, called *λ-cut* or *λ-threshold*, is introduced:
 
-![image](https://user-images.githubusercontent.com/105392989/173573048-b7f02e2a-daff-4906-9e6b-c7ed97978cb7.png)
+<div id="λ-cut" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/173573048-b7f02e2a-daff-4906-9e6b-c7ed97978cb7.png" width="500">
+</div>
 
 We obtain a structure from this binary outranking relation (aSb) with some preference (P), indifference (I) and incomparability (R).
 So we start from our credibility matrix and obtain the following relations: 
 
-![image](https://user-images.githubusercontent.com/105392989/173573240-95415988-c4d3-400d-8895-6f2b0fb88ffc.png)
+<div id="relations" align = "center">
+  <img src="https://user-images.githubusercontent.com/105392989/173573240-95415988-c4d3-400d-8895-6f2b0fb88ffc.png" width="850">
+</div>
 
   **1. Case 1: The top-down ranking algorithm**
   
-  ![image](https://user-images.githubusercontent.com/105392989/173573623-cd01daa0-593e-4115-9551-56719a2b4ca1.png)
+  <div id="top-down ranking" align = "center">
+    <img src="https://user-images.githubusercontent.com/105392989/173573623-cd01daa0-593e-4115-9551-56719a2b4ca1.png" width="850">
+  </div>
 
   First, we start by establishing the λ-cut for the first step of the algorithm (k = 0) : 
   
-  ![image](https://user-images.githubusercontent.com/105392989/173573788-b897d7de-3bf5-4e4b-a5fb-7e1944bb2285.png)
+  <div id="first step" align = "center">
+    <img src="https://user-images.githubusercontent.com/105392989/173573788-b897d7de-3bf5-4e4b-a5fb-7e1944bb2285.png" width="650">
+  </div>
 
   After determining the λ-cut, we determine os, od and q :
   
-  ![image](https://user-images.githubusercontent.com/105392989/173573911-e2ce6ec7-ab78-43cc-bbcb-8fe806911c37.png)
+  <div id="Os-od-q" align = "center">
+    <img src="https://user-images.githubusercontent.com/105392989/173573911-e2ce6ec7-ab78-43cc-bbcb-8fe806911c37.png" width="650">
+  </div>
   
   We recover and rank in decreasing order the alternatives selected at each step -alternative **where the q is maximal**.
   Once this is done, the alternative is removed from the table and the procedure is **repeated until there are no alternatives left**.
@@ -120,7 +142,9 @@ So we start from our credibility matrix and obtain the following relations:
 
   **2. Case 2: The bottom-up ranking algorithm**
   
-  ![image](https://user-images.githubusercontent.com/105392989/173573674-606a0382-757e-437d-b071-f301b0916ca3.png)
+  <div id="bottom-up ranking" align = "center">
+    <img src="https://user-images.githubusercontent.com/105392989/173573674-606a0382-757e-437d-b071-f301b0916ca3.png" width="850">
+  </div>
   
   Here the principle is exactly the same as for the top-down algorithm. The only difference is that we recover the alternatives **where q is minimal**. 
   We therefore rank in **ascending order**.
@@ -134,7 +158,9 @@ So we start from our credibility matrix and obtain the following relations:
 In order to obtain the final ranking, we need to **"merge" the rankings of the two algorithms**.
 To do this, we will construct the preference (P), indifference (I) and incomparability (R) sets defined as follows incomparability (R) defined as follows:
 
-![image](https://user-images.githubusercontent.com/105392989/173575597-eef13a1b-4333-4289-8cb7-3c4024d63691.png)
+<div id="PIR sets" align = "center">
+    <img src="https://user-images.githubusercontent.com/105392989/173575597-eef13a1b-4333-4289-8cb7-3c4024d63691.png" width="850">
+</div>
 
 The final classification obtained through this merger is therefore :
 
